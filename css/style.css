@@ -2,12 +2,133 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
+/*Scroll to Top Button*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+
+/*Scroll to Top Button*/
+
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: auto;
+      margin-bottom: 0;
+}
+
+/*TOP-BAR*/
+
+.navbar-right{
+  margin-right: 5%; 
+}
+
+.topbar .navbar{
+  background-color: lightgray;
+  height: 8%;
+}
+
+
+.social-part i {
+    padding: 0px 5px 0px 5px;
+}
+
+.social-part .fa{
+  font-size: 19px;
+}
+
+
+.topbar .social-part i{
+  display: inline-block;
+}
+
+.topbar .social-part a{
+  text-decoration: none;
+  color: black;
+}
+
+.topbar .navbar-brand{
+  padding-top: 0px !important;
+  font-size: 15px;
+ font-family: 'Poppins', sans-serif;
+}
+
+/*TOP-BAR*/
+
 /* Style the navigation bar */
+
+.navbar-nav{
+  margin-right: 10%;
+}
+
+.navbar a{
+  margin-left: 6%;
+}
+
 .navbar {
   width: 100%;
   background-color: #132a66;
   overflow: auto;
   font-family: "Roboto", sans-serif;
+  height: 20%;
 }
 
 .container-fluid {
@@ -26,6 +147,33 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
+
+#enroll {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    border-color: #ffa916;
+    background-color: #ffa916;
+    border: 1px solid;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.10);
+}
+
+.nav-item button:focus {
+    outline: none; 
+    outline: none;
+}
+
+.nav-item button: hover{
+  color: #132A66;
+  background-color: white;
+  border: none;
+}
+
+
+
 
 .search-container button {
   float: right;
@@ -47,14 +195,8 @@ body {
 }
 
 .w-100 {
-  height: 600px;
+  height: 515px;
   width: 900px;
-}
-
-.card img {
-  height: 150px;
-  width: 150px;
-  margin-left: 20%;
 }
 
 .card-block {
@@ -83,7 +225,8 @@ body {
 
 /*ABOUT US*/
 .about-us-p{
- padding: 20px;
+padding: 21px;
+    font-weight: 300;
     font-size: 20px;
 }
 
@@ -100,6 +243,67 @@ body {
 }
 /*GET IN TOUCH*/
 
+/*Countdown CSS*/
+
+.countdown{
+  padding: 25px;
+   color: #808080;
+    text-align: center; 
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+  position: relative;
+  display:inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+/* Column Grids End */
+
+.wrapper { width: 980px; margin: 30px auto; position: relative;}
+.counter { background-color: transparent; padding: 20px 0; border-radius: 5px;}
+.count-title {
+    color: #565252;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: font-family: 'Poppins', sans-serif;
+}
+.count-text {
+    color: #565252;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.fa-2x { margin: 0 auto; float: none; display: table; color: #132A66; }
+
+/*Countdown CSS*/
+
+
+
 /*FORM CSS STARTS*/
 
 form button {
@@ -114,12 +318,46 @@ form button {
 
 /*FORM CSS ENDS*/
 
+/*FACULTY*/
+
+
+
+
+.f_members .card{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.f_members .card img{
+  padding: 30px 0px 10px 0px;
+}
+
+.f_members p{
+  font-size: 13px;
+  padding: 05px 20px 10px 20px;
+}
+
+.f_members .card-title{
+  letter-spacing: 0px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+.f_members .card-img-top {
+    width: 100px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+}
+
+
+/*FACULTY*/
 
 
 /*COURSES CARDS*/
 
 .card-title
 {   letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif; 
    }
 
 .col-heading {
@@ -179,6 +417,8 @@ border-radius: 15px;
 border-color: #132A66;
 }
 
+
+
 /*COURSES CARDS*/
 
 /*COURSE VIEW MORE BUTTON*/
@@ -215,7 +455,7 @@ border-color: #132A66;
 
 .testimonial-section {
   font-family: 'Hind', sans-serif;
-  padding: 80px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -277,6 +517,33 @@ border-color: #132A66;
 
 /*TESTIMONIALS*/
 
+
+/*FORM*/
+
+form .form-control{
+  border-radius: 20px;
+}
+
+textarea.form-control {
+    border-radius: 10px !important;
+}
+
+
+form button{
+  width: 100% !important;
+  border-radius: 20px !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #132A66 !important; 
+    outline: 0;
+    box-shadow: none !important;
+}
+
+/*FORM*/
+
 /* Footer */
 .site-footer {
   background-color: #132a66;
@@ -315,6 +582,7 @@ border-color: #132A66;
 }
 .footer-links a {
   color: #fff;
+  font-size: 13px;
 }
 .footer-links a:active,
 .footer-links a:focus,
